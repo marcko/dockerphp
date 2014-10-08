@@ -1,0 +1,9 @@
+web:
+  image : tutum/lamp
+  volumes:
+    - ./:/var/www/html
+  ports:
+    - "3306:3306"
+    - "80:80"
+  volumes_from:
+    - "DATOS"
